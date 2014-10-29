@@ -31,5 +31,7 @@ EXPOSE 22
 # open port for jexus web server
 EXPOSE 8081
 #&& /usr/jexus/jws start
-ENTRYPOINT /usr/sbin/sshd -D 
+#ENTRYPOINT /usr/sbin/sshd -D 
+CMD    ["/usr/sbin/sshd", "-D"]
+
 
